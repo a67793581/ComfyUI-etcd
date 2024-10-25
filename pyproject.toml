@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "comfyui-etcd"
+name = "ComfyUI-etcd"
 version = "0.1.0"
 description = ""
 authors = ["Carlo <284474102@qq.com>"]
