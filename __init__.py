@@ -1,6 +1,7 @@
 # 定义包的版本
 __version__ = '0.1.0'
 
+import json
 import os
 import time
 
@@ -30,14 +31,7 @@ def Registered():
     """
     host = os.getenv('HOST')
     etcd = etcd3.client(host=host)
-    # "id":"maliang-core-dev-bc6589677-k9jqw",
-    # "name":"/project/rpc/dev/clotho-ma_liang",
-    # "addr":"10.185.128.58:8082",
-    # "version":"",
-    # "weight":0,
-    # "metadata":{"dubbo-services":"proto.ma_liang.MaLiangApi","env":"dev"},
-    # "endpoints":["grpc://10.185.128.58:8082","http://10.185.128.58:9000"
-    print(etcd.put(RpcName(), ))
+    print(etcd.put(RpcName(), json.dumps({})))
     print(etcd.get(RpcName()))
 
 
