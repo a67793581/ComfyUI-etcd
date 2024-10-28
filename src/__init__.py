@@ -44,7 +44,7 @@ def check_key_lease(etcd, key):
         print(f"Error checking key lease: {e}")
 
 
-async def Registered(ttl = 6):
+async def Registered(ttl = 2):
     """
     :return:asyncio.Task
     """
