@@ -9,11 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 etcd3 = {git = "https://github.com/kragniz/python-etcd3.git"}
-load-dotenv = "^0.1.0"
 
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.3"
 
 [build-system]
 requires = ["poetry-core"]
