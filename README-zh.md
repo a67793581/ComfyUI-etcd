@@ -1,6 +1,6 @@
 # ComfyUI-etcd
 
-Set environment variables
+设置环境变量
 
 HOST=xxx.com
 IP=10.10.10.18
